@@ -42,7 +42,7 @@ export default function VisitorForm() {
     const { error: err } = await supabase.from('visitors').insert({
       name: form.name.trim(),
       phone: form.phone.trim(),
-      id_number: form.id_number.trim() || null,
+      id_card: form.id_number.trim() || null,
       company: form.company.trim() || null,
       host_name: form.host_name.trim(),
       host_department: form.host_department.trim() || null,
